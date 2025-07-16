@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-07-02T13:07:08.456953" rpa="false" schemaversion="5">
+<suite id="s1" name="DD2" source="C:\Users\surya\PycharmProjects\PythonProject\TestCases\DD2.robot">
+<kw name="Open my browser" owner="Login_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-02T13:07:08.858087" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-02T13:07:08.857778" elapsed="2.451977"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-02T13:07:11.310019" elapsed="0.046024"/>
+</kw>
+<status status="PASS" start="2025-07-02T13:07:08.857037" elapsed="2.499348"/>
+</kw>
+<test id="s1-t1" name="LoginTestWithExcel using" line="10">
+<kw name="Invalid credentials">
+<msg time="2025-07-02T13:07:11.361348" level="FAIL">Variable '${username}' not found.</msg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2025-07-02T13:07:11.359159" elapsed="0.002407">Variable '${username}' not found.</status>
+</kw>
+<status status="FAIL" start="2025-07-02T13:07:11.356604" elapsed="0.005680">Variable '${username}' not found.</status>
+</test>
+<kw name="close my browser" owner="Login_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-07-02T13:07:11.365178" elapsed="2.147909"/>
+</kw>
+<status status="PASS" start="2025-07-02T13:07:11.364485" elapsed="2.148976"/>
+</kw>
+<status status="FAIL" start="2025-07-02T13:07:08.460312" elapsed="5.053267"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="DD2" id="s1" pass="0" fail="1" skip="0">DD2</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-02T13:07:08.849216" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\surya\PycharmProjects\PythonProject\TestCases\DD2.robot", line 0</msg>
+<msg time="2025-07-02T13:07:08.849636" level="ERROR">In source file:
+  File "../Testdata/Logindata.xlsx", line 0</msg>
+<msg time="2025-07-02T13:07:08.855657" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ImportError: Requirements (pandas, openpyxl) for XLSX support are not installed.
+    Use 'pip install -U robotframework-datadriver[XLS]' to install XLSX support.</msg>
+</errors>
+</robot>

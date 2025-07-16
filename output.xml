@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-07-09T11:50:03.583664" rpa="false" schemaversion="5">
+<suite id="s1" name="DDT3CSV" source="C:\Users\surya\PycharmProjects\PythonProject\TestCases\DDT3CSV.robot">
+<kw name="Open my browser" owner="Login_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-09T11:50:04.057055" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-09T11:50:04.056059" elapsed="2.117536"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-09T11:50:06.174796" elapsed="0.522602"/>
+</kw>
+<status status="PASS" start="2025-07-09T11:50:04.052354" elapsed="2.646142"/>
+</kw>
+<test id="s1-t1" name="LoginTestWithCSV using username and password" line="10">
+<status status="FAIL" start="2025-07-09T11:50:06.699107" elapsed="0.003612">Test cannot be empty.</status>
+</test>
+<kw name="close my browser" owner="Login_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-07-09T11:50:06.705570" elapsed="2.192859"/>
+</kw>
+<status status="PASS" start="2025-07-09T11:50:06.704908" elapsed="2.193920"/>
+</kw>
+<status status="FAIL" start="2025-07-09T11:50:03.586930" elapsed="5.312010"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="DDT3CSV" id="s1" pass="0" fail="1" skip="0">DDT3CSV</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-09T11:50:04.041227" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\surya\PycharmProjects\PythonProject\TestCases\DDT3CSV.robot", line 0</msg>
+<msg time="2025-07-09T11:50:04.041876" level="ERROR">In source file:
+  File "C:\Users\surya\PycharmProjects\PythonProject\TestCases\..\TestData\test.csv", line 0</msg>
+<msg time="2025-07-09T11:50:04.049941" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${username}.</msg>
+</errors>
+</robot>
