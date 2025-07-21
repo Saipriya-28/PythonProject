@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-07-07T13:00:02.193893" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Dropdown1" source="C:\Users\surya\PycharmProjects\PythonProject\Executing_Suites\Dropdown1.robot">
+<test id="s1-s1-t1" name="TestingInputBox" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-07T13:00:02.453958" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php'.</msg>
+<arg>https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-07T13:00:02.453609" elapsed="2.467567"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-07T13:00:04.921707" elapsed="0.044652"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-07-07T13:00:04.966680" elapsed="0.000712"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-07-07T13:00:04.968422" level="INFO">Selecting options from selection list 'state' by label Haryana.</msg>
+<arg>state</arg>
+<arg>Haryana</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-07-07T13:00:04.967662" elapsed="20.197570"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-07-07T13:00:25.166498" level="INFO">Selecting options from selection list 'state' by index 4.</msg>
+<arg>state</arg>
+<arg>4</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-07-07T13:00:25.165701" elapsed="24.192319"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-07-07T13:00:49.358387" elapsed="8.151195"/>
+</kw>
+<status status="PASS" start="2025-07-07T13:00:02.452742" elapsed="55.057267"/>
+</test>
+<status status="PASS" start="2025-07-07T13:00:02.223503" elapsed="55.287272"/>
+</suite>
+<status status="PASS" start="2025-07-07T13:00:02.210821" elapsed="55.306908"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="Dropdown1" id="s1-s1" pass="1" fail="0" skip="0">Suites.Dropdown1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
